@@ -21,5 +21,12 @@ public class ManagerCommerce extends JFrame {
         pack();
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
+        preparaCadastroProduto();
+    }
+
+    private void preparaCadastroProduto(){
+        CadastroProdutoUI cadastroProdutoUI = new CadastroProdutoUI();
+        setContentPane(cadastroProdutoUI);
+        validate();
     }
 }
